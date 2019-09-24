@@ -14,6 +14,6 @@ The source code of Document Rectification and Illumination Correction using a Pa
 ## Getting Started
 
 ### Dataset Generation
-We run the Python script on [Blender](https://www.blender.org/) to automatically generate synthetic distorted document image and the corresponding flow.
+We run the Python script in [Blender](https://www.blender.org/) to automatically generate synthetic distorted document image and the corresponding flow.
 
 <img src='imgs/syn_dataset.jpg' align="center" width=850> 
