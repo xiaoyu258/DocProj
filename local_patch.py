@@ -4,6 +4,19 @@ from skimage import io
 import os
 import skimage
 import shutil
+import argparse
+
+import warnings
+warnings.filterwarnings('ignore')
+
+parser = argparse.ArgumentParser()
+# For parsing commandline arguments
+parser.add_argument("--res", type=int, default=256, help='the resolution of local patch')
+parser.add_argument("--totalNum", type=int, default=2, help='the number of images to be cropped for the whole dataset')
+parser.add_argument("--testNum", type=int, default=1, help='the number of images to be cropped for test dataset')
+parser.add_argument("--dataPath", type=str, default='/home/xliea/DocProj/dataset/dataset_5/SampleDataset', help='dataset path')
+parser.add_argument("--savePath", type=str, default='/home/xliea/DocProj/dataset/dataset_5/dataset_patch', help='save path')
+args = parser.parse_args()
 
 def createDir(savePath):
     
@@ -112,10 +125,5 @@ def generate(S, num, savePath, datasetpath):
                     io.imsave(imgpath, patch) 
                     np.save(matpath, np.array([patchFlowX, patchFlowY], dtype = np.float32))
 
-S = 256         # the resolution of local patch
-num = 20        # the number of images to be cropped for the dataset
-testNum = 5     # the number of images to be cropped for validation dataset
-datasetpath = '/home/xliea/DocProj/SampleDataset'      # the dataset path
-savePath    = '/home/xliea/DocProj/dataset_patch'      # the patch dataset path to be saved
-generate(S, num, savePath, datasetpath)
-moveTest(num, testNum, savePath, datasetpath)  
+generate(args.res, args.totalNum, args.savePath, args.dataPath)
+moveTest(args.totalNum, args.testNum, args.savePath, args.dataPath)
