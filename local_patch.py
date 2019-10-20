@@ -115,7 +115,7 @@ def generate(S, num, savePath, datasetpath):
 S = 256         # the resolution of local patch
 num = 20        # the number of images to be cropped for the dataset
 testNum = 5     # the number of images to be cropped for validation dataset
-datasetpath = '/home/xliea/DocProj/dataset/dataset_5/SampleDataset'      # the dataset path
-savePath    = '/home/xliea/DocProj/dataset/dataset_5/dataset_patch'      # the patch dataset path to be saved
+datasetpath = '/home/xliea/DocProj/SampleDataset'      # the dataset path
+savePath    = '/home/xliea/DocProj/dataset_patch'      # the patch dataset path to be saved
 generate(S, num, savePath, datasetpath)
 moveTest(num, testNum, savePath, datasetpath)  
