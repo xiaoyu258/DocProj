@@ -35,6 +35,6 @@ python train.py
 ```
 
 ### Use a Pre-trained Model
-You can download the pretrained model [here](https://drive.google.com/open?id=1EPmFYd7OwfUZBLkJQ9sO8G1r5tLniKDh).
+You can download the pre-trained model [here](https://drive.google.com/open?id=1EPmFYd7OwfUZBLkJQ9sO8G1r5tLniKDh).
 
 You can also use `eval.py` and modify the model path, image path and saved result path to your own directory to generate your own results.
