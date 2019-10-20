@@ -14,8 +14,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--res", type=int, default=256, help='the resolution of local patch')
 parser.add_argument("--totalNum", type=int, default=2, help='the number of images to be cropped for the whole dataset')
 parser.add_argument("--testNum", type=int, default=1, help='the number of images to be cropped for test dataset')
-parser.add_argument("--dataPath", type=str, default='/home/xliea/DocProj/dataset/dataset_5/SampleDataset', help='dataset path')
-parser.add_argument("--savePath", type=str, default='/home/xliea/DocProj/dataset/dataset_5/dataset_patch', help='save path')
+parser.add_argument("--dataPath", type=str, default='/home/xliea/SampleDataset', help='dataset path')
+parser.add_argument("--savePath", type=str, default='/home/xliea/dataset_patch', help='save path')
 args = parser.parse_args()
 
 def createDir(savePath):
