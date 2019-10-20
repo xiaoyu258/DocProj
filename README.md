@@ -27,3 +27,5 @@ The first thing you need to do is to crop the dataset to patches for training. C
 python local_patch.py   # crop images and flows to local patches and local patch flows
 python global_patch.py  # crop images to global patches
 ```
+
+### Training
