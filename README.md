@@ -14,6 +14,16 @@ The source code of Document Rectification and Illumination Correction using a Pa
 ## Getting Started
 
 ### Dataset Generation
-We run the Python script in [Blender](https://www.blender.org/) to automatically generate synthetic distorted document image and the corresponding flow.
+We use [Blender](https://www.blender.org/) to automatically generate synthetic distorted document image and the corresponding flow.
 
 <img src='imgs/syn_dataset.jpg' align="center" width=850> 
+
+You can download a sample dataset (438MB) from [here](https://drive.google.com/open?id=1b3kBs46ZSq5cWjvGdMjWNY854YaJ6dZ1) and we are still working on how to find a good way to upload the full dataset since it is too large (65GB).
+
+The dataset includes three floders: img (the distorted images), img_mask (the mask of background), flow (the forward flow of the distorted images).
+
+The first thing you need to do is to crop the dataset to patches for training.  Change the path to your own directory in the scripts and run the following commands:
+```bash
+python local_patch.py   # crop images and flows to local patches and local patch flows
+python global_patch.py  # crop images to global patches
+```
