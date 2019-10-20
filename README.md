@@ -22,7 +22,7 @@ You can download a sample dataset (438MB) from [here](https://drive.google.com/o
 
 The dataset includes three folders: img (the distorted images), img_mask (the mask of background), flow (the forward flow of the distorted images).
 
-The first thing you need to do is to crop the dataset to patches for training. Change the path to your own directory and run the following commands. For help message about optional arguments, run `python xxx.py --h`
+The first thing you need to do is to crop the dataset to patches for training. Change arguments to your own and run the following commands. For help message about optional arguments, run `python xxx.py --h`
 ```bash
 python local_patch.py   # crop images and flows to local patches and local patch flows
 python global_patch.py  # crop images to global patches
