@@ -76,21 +76,12 @@ def generate(S, num, savePath, resFactor, datasetpath):
         cropW = S
         ovlp = int(S * 0.25)
         
-        padH = (int((H - cropH)/(cropH - ovlp) + 1) * (cropH - ovlp) + cropH) - H
-        padW = (int((W - cropW)/(cropW - ovlp) + 1) * (cropW - ovlp) + cropW) - W
+        ynum = int((H - cropH)/(cropH - ovlp)) + 1
+        xnum = int((W - cropW)/(cropW - ovlp)) + 1
         
-        sEdge = (resFactor - 1.0)/2.0
+        padding = int(S * (resFactor - 1.0)/2.0)
         
-        padding = int(S * sEdge)
-        
-        image = np.lib.pad(image, ((0, padH), (0, padW), (0, 0)), 'edge')
         image = np.lib.pad(image, ((padding, padding), (padding, padding), (0, 0)), 'edge')
-
-        H = image.shape[0]
-        W = image.shape[1]
-        
-        ynum = int((H - sEdge * 2 * cropH - cropH)/(cropH - ovlp)) + 1
-        xnum = int((W - sEdge * 2 * cropW - cropW)/(cropW - ovlp)) + 1
 
         for j in range(0, ynum):
             for i in range(0, xnum):
