@@ -50,3 +50,6 @@ python eval.py [--imgPath [PATH]] [--modelPath [PATH]]
 --saveImgPath         Path to saved cropped image
 --saveFlowPath        Path to saved estimated flows
 ```
+
+### Stitch flow
+Download the Windows executable program [here]https://drive.google.com/open?id=1SNvPtEJtpsiRf9-mIqnhLIriVXTCi2Vr to stitch the patch flows to get the image flow.
