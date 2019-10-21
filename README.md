@@ -63,9 +63,11 @@ Graphcut.exe [Input Path] [Output Path]
 `[Output Path]` is the path to the output stitched flow with the shape of \[2, H, W\].
 
 ### Resampling
-
 Import `resampling.rectification` function to resample the distorted image by the stitched flow.
 
 The distorted image should be a Numpy array with the shape of \[H, W, 3\] for a color image or \[H, W\] for a greyscale image, the stitched flow should be an array with the shape of \[2, H, W\].
 
 The function will return the resulting image and a mask to indicate whether each pixel will converge within the maximum iteration.
+
+**To help you follow all these steps, we also give an example with all the intermediate results [here](https://drive.google.com/open?id=1QI2v1oWgha0jdcVuj7mzOXpgjBULZ7Mg) in the test data folder.**
+
