@@ -53,3 +53,10 @@ python eval.py [--imgPath [PATH]] [--modelPath [PATH]]
 
 ### Stitch flow
 Download the Windows executable program [here](https://drive.google.com/open?id=1SNvPtEJtpsiRf9-mIqnhLIriVXTCi2Vr) to stitch the patch flows to get the image flow.
+
+Run the following command:
+```bash
+Graphcut.exe [Input Path] [Output Path]
+[Input Path]  Path to input patch flows with the shape of [num of patch in y axis, num of patch in x axis, 2, H of patch, W of patch]
+[Output Path] Path to output stitched flow with the shape of [2, H of the image, W of the image]
+```
