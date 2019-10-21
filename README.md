@@ -57,6 +57,6 @@ Download the Windows executable program [here](https://drive.google.com/open?id=
 Run the following command:
 ```bash
 Graphcut.exe [Input Path] [Output Path]
-[Input Path]  Path to input patch flows with the shape of [num of patch in y axis, num of patch in x axis, 2, H of patch, W of patch]
-[Output Path] Path to output stitched flow with the shape of [2, H of the image, W of the image]
 ```
+'[Input Path]'  is the path to input patch flows with the shape of \[yNum, xNum, 2, patchH, patchW\], where yNum and xNum are the number of patch in y and x direction, patchH and patchW are the height and width of a local patch.
+'[Output Path]' is the path to output stitched flow with the shape of \[2, H, W\].
