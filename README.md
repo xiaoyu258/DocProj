@@ -61,3 +61,11 @@ Graphcut.exe [Input Path] [Output Path]
 `[Input Path]`  is the path to input patch flows with the shape of \[yNum, xNum, 2, patchH, patchW\], where yNum and xNum are the number of patch in y and x direction, patchH and patchW are the height and width of a local patch.
 
 `[Output Path]` is the path to the output stitched flow with the shape of \[2, H, W\].
+
+### Resampling
+
+Import `resampling.rectification` function to resample the distorted image by the stitched flow.
+
+The distorted image should be a Numpy array with the shape of H\*W\*3 for a color image or H\*W for a greyscale image, the stitched flow should be an array with the shape of 2\*H\*W.
+
+The function will return the resulting image and a mask to indicate whether each pixel will converge within the maximum iteration.
