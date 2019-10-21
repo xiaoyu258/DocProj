@@ -39,3 +39,14 @@ python train.py
 
 ### Use a Pre-trained Model
 You can download the pre-trained model [here](https://drive.google.com/open?id=1EPmFYd7OwfUZBLkJQ9sO8G1r5tLniKDh).
+
+Run the following command for resizing and cropping the test document image to local and global patches and estimate the patch flows:
+```bash
+python eval.py [--imgPath [PATH]] [--modelPath [PATH]]
+               [--saveImgPath [PATH]] [--saveFlowPath [PATH]]
+               
+--imgPath             Path to input image
+--modelPath           Path to pre-trained model
+--saveImgPath         Path to saved cropped image
+--saveFlowPath        Path to saved estimated flows
+```
