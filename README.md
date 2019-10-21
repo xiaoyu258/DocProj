@@ -11,7 +11,7 @@ The source code of Document Rectification and Illumination Correction using a Pa
 - Python 3
 - CPU or NVIDIA GPU + CUDA CuDNN
 
-## Getting Started
+## Getting Started - Geometric Part
 
 ### Dataset Generation
 We use [Blender](https://www.blender.org/) to automatically generate synthetic distorted document image and the corresponding flow.
@@ -70,4 +70,6 @@ The distorted image should be a Numpy array with the shape of \[H, W, 3\] for a 
 The function will return the resulting image and a mask to indicate whether each pixel will converge within the maximum iteration.
 
 **To help you follow all these steps, we also give an example with all the intermediate results [here](https://drive.google.com/open?id=1QI2v1oWgha0jdcVuj7mzOXpgjBULZ7Mg) in the test data folder.**
+
+## Getting Started - Illumination Part
 
