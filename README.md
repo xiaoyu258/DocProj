@@ -18,9 +18,12 @@ We use [Blender](https://www.blender.org/) to automatically generate synthetic d
 
 <img src='imgs/syn_dataset.jpg' align="center" width=850> 
 
-You can download a sample dataset (438MB) from [here](https://drive.google.com/open?id=1b3kBs46ZSq5cWjvGdMjWNY854YaJ6dZ1) and the full dataset (65GB) from [here](https://drive.google.com/open?id=1WkzMukIHS_smGPyjcyj7LIiWUk0RJriN).
+You can download a small dataset with 20 samples (438MB) from [here](https://drive.google.com/open?id=1b3kBs46ZSq5cWjvGdMjWNY854YaJ6dZ1) for fun and the full dataset with 2450 samples (65GB) from [here](https://drive.google.com/open?id=1WkzMukIHS_smGPyjcyj7LIiWUk0RJriN).
 
-The dataset includes three folders: img (the distorted images), img_mask (the mask of background), flow (the forward flow of the distorted images).
+The dataset includes three folders: 
+img with the shape of [2400, 1800, 3] (the distorted images), 
+img_mask with the shape of [2400, 1800] (the mask of background), 
+flow with the shape of [2, 2400, 1800] (the forward flow of the distorted images).
 
 The first thing you need to do is to crop the dataset to patches for training. Change arguments to your own and run the following commands. For help message about optional arguments, run `python xxx.py --h`
 ```bash
