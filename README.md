@@ -71,5 +71,3 @@ The function will return the resulting image and a mask to indicate whether each
 
 **To help you follow all these steps, we also give an example with all the intermediate results [here](https://drive.google.com/open?id=1QI2v1oWgha0jdcVuj7mzOXpgjBULZ7Mg) in the test data folder.**
 
-## Illumination Correction
-
