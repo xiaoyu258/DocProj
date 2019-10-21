@@ -18,9 +18,9 @@ from modelGeoNet import GeoNet
 # For parsing commandline arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("--imgPath", type=str, default='E:\\IMG_7325.jpeg', help='input image path')
-parser.add_argument("--saveInputPath", type=str, default='E:\\IMG_7325.png', help='resized image path')
-parser.add_argument("--saveFlowPath", type=str, default='E:\\IMG_7325.npy', help='saved flows path')
 parser.add_argument("--modelPath", type=str, default='E:\\model.pkl', help='pre-trained model path')
+parser.add_argument("--saveImgPath", type=str, default='E:\\IMG_7325.png', help='resized image path')
+parser.add_argument("--saveFlowPath", type=str, default='E:\\IMG_7325.npy', help='saved flows path')
 args = parser.parse_args()
 
 def resizeImg(imgPath, H, W):
