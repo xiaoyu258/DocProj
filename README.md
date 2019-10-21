@@ -2,7 +2,7 @@
 
 ### [Project page](https://xiaoyu258.github.io/projects/docproj) | [Paper](https://arxiv.org/abs/1909.09470)
 
-The source code of Document Rectification and Illumination Correction using a Patch-based CNN by Li et al, to appear at SIGGRAPH Asia 2019, Brisbane, Australia.
+The source code of Document Rectification and Illumination Correction using a Patch-based CNN by Xiaoyu Li, Bo Zhang, Jing Liao, Pedro V. Sander, to appear at SIGGRAPH Asia 2019, Brisbane, Australia.
 
 <img src='imgs/teaser.jpg' align="center" width=850> 
 
