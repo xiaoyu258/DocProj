@@ -52,4 +52,4 @@ python eval.py [--imgPath [PATH]] [--modelPath [PATH]]
 ```
 
 ### Stitch flow
-Download the Windows executable program [here]https://drive.google.com/open?id=1SNvPtEJtpsiRf9-mIqnhLIriVXTCi2Vr to stitch the patch flows to get the image flow.
+Download the Windows executable program [here](https://drive.google.com/open?id=1SNvPtEJtpsiRf9-mIqnhLIriVXTCi2Vr) to stitch the patch flows to get the image flow.
