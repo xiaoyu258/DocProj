@@ -73,6 +73,12 @@ The function will return the resulting image and a mask to indicate whether each
 
 ## Illumination Correction
 
+### Training
+Run the following command and change the optional arguments for training.
+```bash
+python train_illumination.py
+```
+
 ### Use a Pre-trained Model
 You can download the pre-trained illNet model [here](https://drive.google.com/open?id=1EPmFYd7OwfUZBLkJQ9sO8G1r5tLniKDh).
 
