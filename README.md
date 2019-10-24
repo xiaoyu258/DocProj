@@ -71,3 +71,16 @@ The function will return the resulting image and a mask to indicate whether each
 
 **To help you follow all these steps, we also give an example with all the intermediate results [here](https://drive.google.com/open?id=1QI2v1oWgha0jdcVuj7mzOXpgjBULZ7Mg) in the test data folder.**
 
+## Illumination Correction
+
+### Use a Pre-trained Model
+You can download the pre-trained illNet model [here](https://drive.google.com/open?id=1EPmFYd7OwfUZBLkJQ9sO8G1r5tLniKDh).
+
+Run the following command for testing:
+```bash
+python eval_illumination.py [--imgPath [PATH]] [--savPath [PATH]] [--modelPath [PATH]]
+                            
+--imgPath             Path to input image
+--savPath             Path to saved output
+--modelPath           Path to pre-trained model
+```
