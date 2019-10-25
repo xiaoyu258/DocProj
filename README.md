@@ -18,7 +18,7 @@ We use [Blender](https://www.blender.org/) to automatically generate synthetic d
 
 <img src='imgs/syn_dataset.jpg' align="center" width=850> 
 
-You can download a small dataset with 20 samples (438MB) from [here](https://drive.google.com/open?id=1b3kBs46ZSq5cWjvGdMjWNY854YaJ6dZ1) for fun and the full dataset with 2450 samples (65GB) from [here](https://drive.google.com/open?id=1WkzMukIHS_smGPyjcyj7LIiWUk0RJriN).
+You can download a small dataset with 20 samples (438MB) from [here](https://drive.google.com/open?id=1b3kBs46ZSq5cWjvGdMjWNY854YaJ6dZ1) for fun and the full dataset with 2450 samples (65GB) from [here](https://drive.google.com/open?id=1WkzMukIHS_smGPyjcyj7LIiWUk0RJriN) for torrent file or from OneDrive [here](https://hkustconnect-my.sharepoint.com/:f:/g/personal/xliea_connect_ust_hk/Ej_nCRH7um5Lo9SykLqD8IUBwonSuNqYjTjFp96qgqdFlA).
 
 The dataset includes three folders: 
 - img (the distorted images, with the shape of [2400, 1800, 3])
