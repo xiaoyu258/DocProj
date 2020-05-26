@@ -62,6 +62,8 @@ Graphcut.exe [Input Path] [Output Path]
 
 `[Output Path]` is the path to the output stitched flow with the shape of \[2, H, W\].
 
+Notes: The path should be absolute path with "//" due to the path parse function in the program. e.g. "H://Release//test data//2_patchFlows.npy"
+
 ### Resampling
 Import `resampling.rectification` function to resample the distorted image by the stitched flow.
 
