@@ -184,7 +184,7 @@ def testRealFlow(modelPath, localPatch, globalPatch):
 
 
 img = resizeImg(args.imgPath, H = 2000, W = 1500)
-io.imsave(args.saveInputPath, img)
+io.imsave(args.saveImgPath, img)
 img = padImg(img)
 totalLocalPatch, totalGlobaPatch = cropToPatch(img)
 totalFlow = testRealFlow(args.modelPath, totalLocalPatch, totalGlobaPatch)
