@@ -1,6 +1,6 @@
 # DocProj
 
-### [Project page](https://xiaoyu258.github.io/projects/docproj) | [Paper](https://arxiv.org/abs/1909.09470)
+### [Paper](https://arxiv.org/abs/1909.09470)
 
 The source code of Document Rectification and Illumination Correction using a Patch-based CNN by Xiaoyu Li, Bo Zhang, Jing Liao, Pedro V. Sander, SIGGRAPH Asia 2019.
 
